@@ -1,0 +1,23 @@
+.container{
+  display:grid;
+  position: relative;
+  grid-template-columns: 1000px 500px;
+  grid-template-columns: 1000px 500px;
+  column-gap: 50px;
+  width: 1000px;
+  height: 1000px;
+
+}
+
+.container .canvas{
+  position: absolute;
+  border : 2px solid black;
+  width: 1000px;
+  height: 1000px;
+
+}
+
+.container .list{
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
