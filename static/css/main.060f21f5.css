@@ -1,0 +1,2 @@
+.container{grid-column-gap:50px;-webkit-column-gap:50px;column-gap:50px;display:grid;grid-template-columns:1000px 500px;height:1000px;position:relative;width:1000px}.container .canvas{border:2px solid #000;height:1000px;position:absolute;width:1000px}.container .list{grid-column-end:3;grid-column-start:2}
+/*# sourceMappingURL=main.060f21f5.css.map*/
