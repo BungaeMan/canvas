@@ -1,0 +1,50 @@
+{
+	"info": {
+		"description": "객체 인식용 한국형 비전 데이터셋",
+		"version": "1.0",
+		"year": "2022"
+	},
+	"categories": [
+		{
+			"supercategory": "animal",
+			"id": "15",
+			"name": "bird"
+		}
+	],
+	"images": [
+		{
+			"id": "0001488",
+			"width": 2396,
+			"height": 1080,
+			"file_name": "IMG_0001488_bird(bird).jpg"
+		}
+	],
+	"annotations": [
+		{
+			"id": 295,
+			"image_id": 1488,
+			"category_id": 15,
+			"iscrowd": 0,
+			"bbox": [
+				497.0,
+				112.0,
+				251.0,
+				444.0
+			],
+			"area": 83783.0
+		},
+		{
+			"id": 296,
+			"image_id": 1488,
+			"category_id": 15,
+			"iscrowd": 0,
+			"bbox": [
+				1272.0,
+				218.0,
+				177.0,
+				328.0
+			],
+			"area": 35853.0
+		}
+	]
+}

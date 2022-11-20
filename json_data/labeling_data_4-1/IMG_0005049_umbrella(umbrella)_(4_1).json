@@ -1,0 +1,73 @@
+{
+	"info": {
+		"description": "객체 인식용 한국형 비전 데이터셋",
+		"version": "1.0",
+		"year": "2022"
+	},
+	"categories": [
+		{
+			"supercategory": "furniture",
+			"id": "116",
+			"name": "door"
+		},
+		{
+			"supercategory": "accessory",
+			"id": "20",
+			"name": "umbrella"
+		},
+		{
+			"supercategory": "kitchen",
+			"id": "51",
+			"name": "ladle"
+		}
+	],
+	"images": [
+		{
+			"id": "0005049",
+			"width": 1080,
+			"height": 1920,
+			"file_name": "IMG_0005049_umbrella(umbrella).jpg"
+		}
+	],
+	"annotations": [
+		{
+			"id": 450,
+			"image_id": 5049,
+			"category_id": 116,
+			"iscrowd": 0,
+			"bbox": [
+				172.12,
+				0.0,
+				907.88,
+				1373.74
+			],
+			"area": 880119.0
+		},
+		{
+			"id": 452,
+			"image_id": 5049,
+			"category_id": 20,
+			"iscrowd": 0,
+			"bbox": [
+				71.0,
+				267.91,
+				630.0,
+				975.09
+			],
+			"area": 247456.0
+		},
+		{
+			"id": 453,
+			"image_id": 5049,
+			"category_id": 51,
+			"iscrowd": 0,
+			"bbox": [
+				589.68,
+				1300.91,
+				290.32,
+				216.09
+			],
+			"area": 10150.0
+		}
+	]
+}

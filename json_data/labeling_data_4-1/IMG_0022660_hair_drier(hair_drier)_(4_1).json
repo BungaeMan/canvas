@@ -1,0 +1,55 @@
+{
+	"info": {
+		"description": "객체 인식용 한국형 비전 데이터셋",
+		"version": "1.0",
+		"year": "2022"
+	},
+	"categories": [
+		{
+			"supercategory": "indoor",
+			"id": "124",
+			"name": "hair drier"
+		},
+		{
+			"supercategory": "kitchen",
+			"id": "58",
+			"name": "cutlery"
+		}
+	],
+	"images": [
+		{
+			"id": "0022660",
+			"width": 1920,
+			"height": 1081,
+			"file_name": "IMG_0022660_hair_drier(hair_drier).jpg"
+		}
+	],
+	"annotations": [
+		{
+			"id": 1171,
+			"image_id": 22660,
+			"category_id": 124,
+			"iscrowd": 0,
+			"bbox": [
+				196.31,
+				90.07,
+				1192.84,
+				670.63
+			],
+			"area": 240773.0
+		},
+		{
+			"id": 1173,
+			"image_id": 22660,
+			"category_id": 58,
+			"iscrowd": 0,
+			"bbox": [
+				678.21,
+				374.56,
+				658.62,
+				450.03
+			],
+			"area": 41530.0
+		}
+	]
+}

@@ -1,0 +1,68 @@
+{
+	"info": {
+		"description": "객체 인식용 한국형 비전 데이터셋",
+		"version": "1.0",
+		"year": "2022"
+	},
+	"categories": [
+		{
+			"supercategory": "kitchen",
+			"id": "59",
+			"name": "plate"
+		},
+		{
+			"supercategory": "kitchen",
+			"id": "58",
+			"name": "cutlery"
+		}
+	],
+	"images": [
+		{
+			"id": "0022674",
+			"width": 1080,
+			"height": 1920,
+			"file_name": "IMG_0022674_cutlery(knife).jpg"
+		}
+	],
+	"annotations": [
+		{
+			"id": 127,
+			"image_id": 22674,
+			"category_id": 59,
+			"iscrowd": 0,
+			"bbox": [
+				667.0,
+				276.3,
+				413.0,
+				877.7
+			],
+			"area": 267159.0
+		},
+		{
+			"id": 128,
+			"image_id": 22674,
+			"category_id": 58,
+			"iscrowd": 0,
+			"bbox": [
+				207.0,
+				294.0,
+				125.0,
+				1191.0
+			],
+			"area": 90984.0
+		},
+		{
+			"id": 129,
+			"image_id": 22674,
+			"category_id": 58,
+			"iscrowd": 0,
+			"bbox": [
+				356.0,
+				309.0,
+				191.0,
+				1168.0
+			],
+			"area": 86956.0
+		}
+	]
+}

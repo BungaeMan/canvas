@@ -1,13 +1,24 @@
 {
   "files": {
-    "main.css": "/canvas/static/css/main.060f21f5.css",
-    "main.js": "/canvas/static/js/main.b6561df3.js",
+    "main.css": "/canvas/static/css/main.454c8cb5.css",
+    "main.js": "/canvas/static/js/main.39176645.js",
+    "static/media/mustang.jpg": "/canvas/static/media/mustang.f04c391ce0ae304c24df.jpg",
+    "static/media/IMG_0001488_bird(bird).jpg": "/canvas/static/media/IMG_0001488_bird(bird).d7bd1c8ab40e9d78eca0.jpg",
+    "static/media/IMG_0009102_apple(apple).jpg": "/canvas/static/media/IMG_0009102_apple(apple).303444975cd8bffab161.jpg",
+    "static/media/IMG_0022674_cutlery(knife).jpg": "/canvas/static/media/IMG_0022674_cutlery(knife).348c68d13f9b221409e1.jpg",
+    "static/media/IMG_0004574_rice_cooker(steamer_rice_cooker).jpg": "/canvas/static/media/IMG_0004574_rice_cooker(steamer_rice_cooker).ec168611d3f77dac7c02.jpg",
+    "static/media/IMG_0005049_umbrella(umbrella).jpg": "/canvas/static/media/IMG_0005049_umbrella(umbrella).e16c80b16711d4dac7c5.jpg",
+    "static/media/IMG_0022660_hair_drier(hair_drier).jpg": "/canvas/static/media/IMG_0022660_hair_drier(hair_drier).4ca28fa41db9203f4193.jpg",
+    "static/media/IMG_0009946_vegetable_peeler(vegetable_peeler).jpg": "/canvas/static/media/IMG_0009946_vegetable_peeler(vegetable_peeler).c5519cf1809171b9bc3c.jpg",
+    "static/media/IMG_0004682_banana(banana).jpg": "/canvas/static/media/IMG_0004682_banana(banana).bd90650bfe55ba0e8447.jpg",
+    "static/media/IMG_0197379_dog(dog).jpg": "/canvas/static/media/IMG_0197379_dog(dog).7e2b287346ff9f405fb9.jpg",
+    "static/media/IMG_0041251_garlic(galic(normal)).jpg": "/canvas/static/media/IMG_0041251_garlic(galic(normal)).d46af6c1741f5ab9a424.jpg",
     "index.html": "/canvas/index.html",
-    "main.060f21f5.css.map": "/canvas/static/css/main.060f21f5.css.map",
-    "main.b6561df3.js.map": "/canvas/static/js/main.b6561df3.js.map"
+    "main.454c8cb5.css.map": "/canvas/static/css/main.454c8cb5.css.map",
+    "main.39176645.js.map": "/canvas/static/js/main.39176645.js.map"
   },
   "entrypoints": [
-    "static/css/main.060f21f5.css",
-    "static/js/main.b6561df3.js"
+    "static/css/main.454c8cb5.css",
+    "static/js/main.39176645.js"
   ]
 }
