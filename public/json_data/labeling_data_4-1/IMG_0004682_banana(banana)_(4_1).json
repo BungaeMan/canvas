@@ -1,0 +1,55 @@
+{
+	"info": {
+		"description": "객체 인식용 한국형 비전 데이터셋",
+		"version": "1.0",
+		"year": "2022"
+	},
+	"categories": [
+		{
+			"supercategory": "fruits",
+			"id": "67",
+			"name": "banana"
+		},
+		{
+			"supercategory": "kitchen",
+			"id": "46",
+			"name": "pan"
+		}
+	],
+	"images": [
+		{
+			"id": "0004682",
+			"width": 1080,
+			"height": 1920,
+			"file_name": "IMG_0004682_banana(banana).jpg"
+		}
+	],
+	"annotations": [
+		{
+			"id": 695,
+			"image_id": 4682,
+			"category_id": 67,
+			"iscrowd": 1,
+			"bbox": [
+				24.0,
+				576.0,
+				846.0,
+				745.0
+			],
+			"area": 455764.0
+		},
+		{
+			"id": 696,
+			"image_id": 4682,
+			"category_id": 46,
+			"iscrowd": 0,
+			"bbox": [
+				0.0,
+				260.17,
+				1080.0,
+				1226.55
+			],
+			"area": 908548.0
+		}
+	]
+}

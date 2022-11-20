@@ -1,0 +1,73 @@
+{
+	"info": {
+		"description": "객체 인식용 한국형 비전 데이터셋",
+		"version": "1.0",
+		"year": "2022"
+	},
+	"categories": [
+		{
+			"supercategory": "electronic",
+			"id": "129",
+			"name": "mouse"
+		},
+		{
+			"supercategory": "kitchen",
+			"id": "54",
+			"name": "vegetable peeler"
+		},
+		{
+			"supercategory": "kitchen",
+			"id": "62",
+			"name": "mug"
+		}
+	],
+	"images": [
+		{
+			"id": "0009946",
+			"width": 1081,
+			"height": 1920,
+			"file_name": "IMG_0009946_vegetable_peeler(vegetable_peeler).jpg"
+		}
+	],
+	"annotations": [
+		{
+			"id": 358,
+			"image_id": 9946,
+			"category_id": 129,
+			"iscrowd": 0,
+			"bbox": [
+				521.0,
+				644.0,
+				346.0,
+				408.0
+			],
+			"area": 116035.0
+		},
+		{
+			"id": 359,
+			"image_id": 9946,
+			"category_id": 54,
+			"iscrowd": 0,
+			"bbox": [
+				36.0,
+				581.0,
+				404.0,
+				611.0
+			],
+			"area": 74354.0
+		},
+		{
+			"id": 361,
+			"image_id": 9946,
+			"category_id": 62,
+			"iscrowd": 0,
+			"bbox": [
+				388.0,
+				0.0,
+				604.0,
+				489.0
+			],
+			"area": 216253.0
+		}
+	]
+}

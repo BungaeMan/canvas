@@ -1,0 +1,68 @@
+{
+	"info": {
+		"description": "객체 인식용 한국형 비전 데이터셋",
+		"version": "1.0",
+		"year": "2022"
+	},
+	"categories": [
+		{
+			"supercategory": "kitchen",
+			"id": "57",
+			"name": "bowl"
+		},
+		{
+			"supercategory": "fruits",
+			"id": "68",
+			"name": "apple"
+		}
+	],
+	"images": [
+		{
+			"id": "0009102",
+			"width": 1920,
+			"height": 1080,
+			"file_name": "IMG_0009102_apple(apple).jpg"
+		}
+	],
+	"annotations": [
+		{
+			"id": 1145,
+			"image_id": 9102,
+			"category_id": 57,
+			"iscrowd": 0,
+			"bbox": [
+				302.13,
+				406.62,
+				641.74,
+				422.48
+			],
+			"area": 189733.0
+		},
+		{
+			"id": 1146,
+			"image_id": 9102,
+			"category_id": 68,
+			"iscrowd": 0,
+			"bbox": [
+				418.7,
+				364.7,
+				415.3,
+				410.1
+			],
+			"area": 130378.0
+		},
+		{
+			"id": 1147,
+			"image_id": 9102,
+			"category_id": 68,
+			"iscrowd": 0,
+			"bbox": [
+				973.0,
+				328.9,
+				455.0,
+				463.9
+			],
+			"area": 168893.0
+		}
+	]
+}

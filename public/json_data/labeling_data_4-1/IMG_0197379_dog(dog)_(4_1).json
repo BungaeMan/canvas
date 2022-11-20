@@ -1,0 +1,50 @@
+{
+	"info": {
+		"description": "객체 인식용 한국형 비전 데이터셋",
+		"version": "1.0",
+		"year": "2022"
+	},
+	"categories": [
+		{
+			"supercategory": "animal",
+			"id": "17",
+			"name": "dog"
+		}
+	],
+	"images": [
+		{
+			"id": "0197379",
+			"width": 1920,
+			"height": 1080,
+			"file_name": "IMG_0197379_dog(dog).jpg"
+		}
+	],
+	"annotations": [
+		{
+			"id": 313,
+			"image_id": 197379,
+			"category_id": 17,
+			"iscrowd": 0,
+			"bbox": [
+				316.0,
+				476.4,
+				540.0,
+				441.6
+			],
+			"area": 156048.0
+		},
+		{
+			"id": 314,
+			"image_id": 197379,
+			"category_id": 17,
+			"iscrowd": 0,
+			"bbox": [
+				1019.0,
+				118.0,
+				458.0,
+				700.0
+			],
+			"area": 184749.0
+		}
+	]
+}

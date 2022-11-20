@@ -1,0 +1,55 @@
+{
+	"info": {
+		"description": "객체 인식용 한국형 비전 데이터셋",
+		"version": "1.0",
+		"year": "2022"
+	},
+	"categories": [
+		{
+			"supercategory": "kitchen",
+			"id": "62",
+			"name": "mug"
+		},
+		{
+			"supercategory": "kitchen",
+			"id": "43",
+			"name": "rice cooker"
+		}
+	],
+	"images": [
+		{
+			"id": "0004574",
+			"width": 1920,
+			"height": 1080,
+			"file_name": "IMG_0004574_rice_cooker(steamer_rice_cooker).jpg"
+		}
+	],
+	"annotations": [
+		{
+			"id": 1458,
+			"image_id": 4574,
+			"category_id": 62,
+			"iscrowd": 0,
+			"bbox": [
+				301.0,
+				456.0,
+				303.0,
+				329.0
+			],
+			"area": 70452.0
+		},
+		{
+			"id": 1460,
+			"image_id": 4574,
+			"category_id": 43,
+			"iscrowd": 0,
+			"bbox": [
+				642.4,
+				241.0,
+				958.43,
+				686.0
+			],
+			"area": 415937.0
+		}
+	]
+}
