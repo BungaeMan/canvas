@@ -1,9 +1,7 @@
 import { React, useState, useRef, useEffect, useCallback } from "react";
 import computeIou from "./GetIou";
-import logo from "./mustang.jpg";
 import axios from "axios";
 import "./DrawCanvas.css";
-import { json } from "react-router-dom";
 
 function DrawCanvas() {
   const canvasRef = useRef(null); //프론트 캔버스
@@ -19,6 +17,9 @@ function DrawCanvas() {
   const [jsonData, setJsonData] = useState(null); //json 객체저장
   const [mode, setMode] = useState(-1); //Iou 검사할 annotation ID
   const [iou, setIou] = useState(0); //저장안된 IOU
+
+  const [drawBbox, setDrawBbox] = useState();
+  const [storedBox, setStoredBox] = useState([]);
   const [storedIou, setStoredIou] = useState([]); //저장된 IOU
 
   //프론트 캔버스 선언
@@ -31,7 +32,7 @@ function DrawCanvas() {
   };
 
   //백그라운드 캔버스 선언
-  const getBackCanvas = (drawImg, drawBbox) => {
+  const getBackCanvas = (drawImg) => {
     const canvas = canvasRef2.current;
     canvas.width = jsonData.images[0].width;
     canvas.height = jsonData.images[0].height;
@@ -45,7 +46,7 @@ function DrawCanvas() {
   const getJsonData = async () => {
     await axios
       .get(
-        "./json_data/labeling_data_4-1/IMG_0005049_umbrella(umbrella)_(4_1).json" //json 데이터 경로 지정? 어떤식으로 api 데이터를 한번에 받을지 모름
+        "/json_data/labeling_data_4-1/IMG_0005049_umbrella(umbrella)_(4_1).json" //json 데이터 경로 지정? 어떤식으로 api 데이터를 한번에 받을지 모름
       )
       .then((res) => {
         setJsonData(res.data);
@@ -106,6 +107,7 @@ function DrawCanvas() {
         for (let i = 0; i < bBox.length; i++) {
           getBoxColor();
           setStoredIou((cur) => [...cur, 0]);
+          setStoredBox((cur) => [...cur, 0]);
         }
       }
     }
@@ -150,6 +152,12 @@ function DrawCanvas() {
       // iou 구하기
       let currentX = e.clientX - canvasRef.current.offsetLeft;
       let currentY = e.clientY - canvasRef.current.offsetTop;
+      setDrawBbox({
+        x: pos[0],
+        y: pos[1],
+        w: currentX - pos[0],
+        h: currentY - pos[1],
+      });
       const iou = computeIou(
         {
           x: pos[0],
@@ -175,8 +183,6 @@ function DrawCanvas() {
       return iou;
     }
   }
-
-  console.log(storedIou);
 
   return (
     <div>
@@ -226,7 +232,7 @@ function DrawCanvas() {
                 borderStyle: "solid",
                 borderColor: boxColor[index],
                 width: 400,
-                left: jsonData.images[0].width + 100,
+                left: jsonData.images[0].width,
                 whiteSpace: "pre-line",
               }}
               onClick={() => setMode(index)}
@@ -242,7 +248,11 @@ function DrawCanvas() {
                 onClick={() => {
                   let copy = storedIou;
                   copy[index] = iou;
+                  let copy2 = storedBox;
+                  copy2[index] = drawBbox;
                   setStoredIou(copy);
+                  setStoredBox(copy2);
+                  console.log(copy2);
                 }}
                 style={{ fontSize: 30 }}
               />
