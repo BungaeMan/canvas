@@ -42,7 +42,7 @@ function Polygon() {
   const getJsonData = async () => {
     await axios
       .get(
-        "/json_data/labeling_data_4-2/IMG_0001488_bird(bird)_(4_2).json" //json 데이터 경로 지정? 어떤식으로 api 데이터를 한번에 받을지 모름
+        "../json_data/labeling_data_4-2/IMG_0001488_bird(bird)_(4_2).json" //json 데이터 경로 지정? 어떤식으로 api 데이터를 한번에 받을지 모름
       )
       .then((res) => {
         setJsonData(res.data);
